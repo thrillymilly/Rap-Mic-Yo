@@ -53,7 +53,15 @@ $('.cell').on('click', function(event) {
       $('.message').text('TRY AGIAIN');
   }
 
+  $('.play-again').click(function() {
+    $('.cell').removeClass('player-red');
+    $('.cell').removeClass('player-blue');
+    console.log('HEYYYY');
+  });
+
 });
+
+//L
 
 //CHECK IF PLAYER HAS WON WITH IF STATEMENTS (GET THE ENGINE WORKING)
 //problem with this approach is that it doesn't take into account all the potential draw scenarios
@@ -88,6 +96,6 @@ var checkIfPlayerWon = function(playerColour) {
     }
 };
 
-$('.play-again').click(function() {
-    location.reload();
-});
+// $('.play-again').click(function() {
+//     location.reload();
+// });
