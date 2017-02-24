@@ -6,6 +6,10 @@
   font-family: 'Bevan', cursive;
 }
 
+body {
+
+}
+
 h1{
   display: table-cell;
   height: 5%;
@@ -73,12 +77,10 @@ h1{
 
 .player-blue {
   content: url(images/tupac.gif);
-  transition: 1s ease;
 }
 
 .player-red {
   content: url(images/biggie.gif);
-  transition: 1s ease;
 }
 
 .blue-head {

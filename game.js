@@ -13,7 +13,6 @@
 // currentPlayerCells.push(indexOfCell);
 //
 
-
 var currentPlayer = 'blue';
 
 $('.cell').on('click', function(event) {
@@ -26,6 +25,7 @@ $('.cell').on('click', function(event) {
 
 //SWAP PLAYER
     if (currentPlayer === 'blue') {
+        $
         currentPlayer = 'red';
       }  else {
       currentPlayer = 'blue';
@@ -34,34 +34,36 @@ $('.cell').on('click', function(event) {
 
   }
 
-
 //WHEN PLAYER WINS MANIPULATES CLASSES, PLAYS AUDIO
 
     if (checkIfPlayerWon('player-blue')) {
       $('.reg-head').removeClass('reg-head').addClass('blue-head');
       $('.message').text('Grab your glock when you see Tupac!');
       $('.cell').removeClass('player-red').addClass('player-blue');
+      $('*').css('background-color', '#ADD8E6').css('transition', 'background-color 3s ease');
       var audio = new Audio('audio/tupac-audio.mp3');
       audio.play();
   } else if (checkIfPlayerWon('player-red')) {
       $('.reg-head').removeClass('reg-head').addClass('red-head');
       $('.message').text('Biggie Smalls the savage, doin your brain cells much damage!');
       $('.cell').removeClass('player-blue').addClass('player-red');
+      $('*').css('background-color', '#FF7F7F').css('transition', 'background-color 3s ease');
       var audio = new Audio('audio/biggie-audio.mp3');
       audio.play();
   } else if (checkIfPlayerWon(false)) {
       $('.message').text('TRY AGIAIN');
   }
 
-  $('.play-again').click(function() {
-    $('.cell').removeClass('player-red');
-    $('.cell').removeClass('player-blue');
-    console.log('HEYYYY');
-  });
+
+//This was the reset for the board, but because I have too many variables to change
+// (titles, music, message, each cell) thought I would just reload the entire page.
+    // $('.play-again').click(function() {
+    //   $('.cell').removeClass('player-red');
+    //   $('.cell').removeClass('player-blue');
+    //   $('message').text('Where Brooklyn At!')
+    // });
 
 });
-
-//L
 
 //CHECK IF PLAYER HAS WON WITH IF STATEMENTS (GET THE ENGINE WORKING)
 //problem with this approach is that it doesn't take into account all the potential draw scenarios
@@ -96,6 +98,6 @@ var checkIfPlayerWon = function(playerColour) {
     }
 };
 
-// $('.play-again').click(function() {
-//     location.reload();
-// });
+$('.play-again').click(function() {
+    location.reload();
+});
