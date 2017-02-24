@@ -11,7 +11,7 @@
 // var indexOfCell = $('.board-wrapper .cell').index($cell);
 // var currentPlayerCells = clickedCells[currentPlayer]
 // currentPlayerCells.push(indexOfCell);
-//
+
 
 var currentPlayer = 'blue';
 
