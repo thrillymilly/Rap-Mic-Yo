@@ -1,7 +1,5 @@
-![Rap-Mic-Yo](images/header.png)
-("Rap-Mic-Yo")
-
-# RAP-MIC-YO - A version of tic, tac, toe made using HTML5, CSS3, Javascript and the jQuery library.
+![Rap-Mic-Yo](images/header-image.png)
+### A version of tic, tac, toe made using HTML5, CSS3, Javascript and the jQuery library.
 
 ## How I did it:
 
