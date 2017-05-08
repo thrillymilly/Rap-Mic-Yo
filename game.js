@@ -19,7 +19,7 @@ $('.cell').on('click', function(event) {
   var $cell = $(event.target);
 
   //for readme add HAS CLASS, this was used to make sure that nothing else could
-  //be added to the selected cell.
+  //Player class to be added to the selected cell.
     if (!$cell.hasClass('player-blue') && !$cell.hasClass('player-red')) {
       $cell.addClass('player-' + currentPlayer);
 
